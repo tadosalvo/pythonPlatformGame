@@ -14,6 +14,10 @@ class Player:
         self.x += dx
         self.y += dy
 
+    def create(self, win):
+        pygame.draw.rect(win, (255,0,255), (self.x, self.y, self.width, self.height)) 
+    
+
 
 class Platform:
     def __init__(self, x, y, width, height):
